@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Global Styles */
+:root {
+    --vis-red: #b2182b;   /* Scientific Red */
+    --vis-blue: #2166ac;  /* Scientific Blue */
+    --vis-white: #f7f7f7; /* Neutral Center */
+}
+
+body {
+    font-family: "Times New Roman", Times, serif; /* Times New Roman as requested */
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Red-to-Blue Navigation Bar */
+/* Red-to-Blue Navigation Bar */
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #002147; /* Oxford Blue */
+}
+/* Ensure text in the navbar is readable over the colors */
+.nav-link {
+    color: #ffffff !important; /* Black text for clarity on red/blue gradient */
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.nav-link:hover {
+    color: #444 !important;
+    text-decoration: underline;
+}
+
+/* Branding Logos */
+.nav-logo-img {
+    height: 80px;
+    width: auto;
+    transform: rotate(-15deg); /* Tilted diagonal as requested  */
+}
+
+.nav-title-img {
+    height: 35px;
+    width: auto;
+}
+
+/* Section Headers with Lab Colors */
+.section-header {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: var(--vis-red); 
+    border-bottom: 3px solid var(--vis-blue);
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* Hero Section (Specific to Index Page Gap) */
+.hero {
+    background: #fdfdfd;
+    padding: 60px 0;
+}
+
+/* Logo Sizing */
+.main-logo {
+    max-width: 280px;
+    height: auto;
+    transform: rotate(-15deg); /* Tilted diagonal  */
+    filter: drop-shadow(2px 4px 6px #ccc);
+}
+
+.title-logo {
+    max-width: 500px;
+    height: auto;
+    margin-top: 25px;
+}
+
+/* Member Categories */
+.member-category {
+    color: var(--vis-blue);
+    border-left: 5px solid var(--vis-red);
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* style.css */
+
+.member-box {
+    display: flex;
+    flex-direction: column; /* Stacks image then text */
+    align-items: center;    /* Centers image and text */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: 4px solid #0000ff; /* Blue accent matching lab title */
+    border-radius: 8px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    height: 100%; /* Ensures all boxes in a row are same height */
+}
+
+.member-box:hover {
+    border-top-color: #ff0000; /* Red accent on hover */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.member-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+    border: 2px solid #f8f9fa;
+}
+
+h5 {
+    color: #ff0000; /* Red from lab title */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
