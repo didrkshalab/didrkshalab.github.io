@@ -130,3 +130,19 @@ h5 {
     font-weight: bold;
     margin-bottom: 5px;
 }
+
+/* style.css */
+
+/* Links inside the body text */
+p a {
+    color: #0000ff; /* Use the blue from your colormap */
+    text-decoration: none;
+    /* border-bottom: 1px dashed #0000ff; */
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #ff0000; /* Changes to red on hover */
+    border-bottom: 1px solid #ff0000;
+    background-color: #f8f9fa;
+}
