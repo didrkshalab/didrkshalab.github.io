@@ -17,15 +17,17 @@ body {
 /* Red-to-Blue Navigation Bar */
 /* Red-to-Blue Navigation Bar */
 .navbar {
-    padding: 0.5rem 1rem;
-    background-color: #002147; /* Oxford Blue */
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
 }
-/* Ensure text in the navbar is readable over the colors */
+
 .nav-link {
-    color: #ffffff !important; /* Black text for clarity on red/blue gradient */
+    color: #000000 !important;
     font-weight: bold;
-    margin-left: 50px;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
 }
+
 
 .nav-link:hover {
     color: #444 !important;
@@ -34,11 +36,9 @@ body {
 
 /* Branding Logos */
 .nav-logo-img {
-    height: 80px;
+    height: 60px;
     width: auto;
-    transform: rotate(-15deg); /* Tilted diagonal as requested  */
 }
-
 .nav-title-img {
     height: 35px;
     width: auto;
@@ -98,9 +98,22 @@ body {
     height: 100%; /* Ensures all boxes in a row are same height */
 }
 
-.member-box:hover {
-    border-top-color: #ff0000; /* Red accent on hover */
+.member-desc {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.member-box:hover .member-desc,
+.member-box:focus-within .member-desc {
+        border-top-color: #ff0000; /* Red accent on hover */
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    opacity: 1;
+    max-height: 300px;
 }
 
 .member-pic {
